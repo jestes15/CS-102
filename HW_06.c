@@ -9,11 +9,11 @@ int HW06() {
 		double getSecondInput, sum = 0;
 
 		printf("How many numbers do you wish to input? ");
-		scanf_s("%d", &getInput);
+		scanf("%d", &getInput);
 
 		for (int i = 0; i < getInput; i++) {
 			printf("Enter any number, 0 to stop: ");
-			scanf_s("%lf", &getSecondInput);
+			scanf("%lf", &getSecondInput);
 
 			if (getSecondInput == 0) {
 				printf("Task failed successfully\n");
@@ -40,7 +40,7 @@ int HW06() {
 		}
 
 		printf("Do you wish to repeat the loop? 1 for yes, 0 for no ");
-		scanf_s("%d", &getChoice);
+		scanf("%d", &getChoice);
 
 		if (getChoice == 1) {
 			continue;

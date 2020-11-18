@@ -125,7 +125,7 @@ double Add() {
 	printf("Input as many numbers as you want, or 0 to get your total.\n");
 
 	while (loop_cont) {
-		scanf_s("%lf", &scan_num); //takes the user input
+		scanf("%lf", &scan_num); //takes the user input
 		if (scan_num == 0) {
 			return val_num; //if user input is the stop value it returns the final value
 		}
@@ -142,7 +142,7 @@ double Subtract() {
 	scanf_s("%lf", &val_num);
 	//The first input is the number the user wants to subtract everything else from.
 	while (loop_cont) {
-		scanf_s("%lf", &scan_num);
+		scanf("%lf", &scan_num);
 		//The values he wants to subtract from val_num
 		if (scan_num == 0) {
 			return val_num; //If usr input is 0, then it returns the final value
@@ -160,7 +160,7 @@ double Multiply() {
 	scanf_s("%lf", &val_num);
 	//The first input is the number the user wants to multiply everything by
 	while (loop_cont) {
-		scanf_s("%lf", &scan_num);
+		scanf("%lf", &scan_num);
 
 		if (scan_num == 0) {
 			return val_num; //If usr input is 0, then it returns the final value
@@ -178,7 +178,7 @@ double Divide() {
 	scanf_s("%lf", &val_num);
 
 	while (loop_cont) {
-		scanf_s("%lf", &scan_num);
+		scanf("%lf", &scan_num);
 
 		if (scan_num == 0) {
 			return val_num; //If usr input is 0, then it returns the final value
@@ -192,9 +192,9 @@ double Divide() {
 double Exp() {
 	double base, exp, val_num; //Initialize the variables used in the Exp function
 	printf("What do you want the base of your exponential to be?\n");
-	scanf_s("%lf", &base); //scans for user input for the base of the exponent
+	scanf("%lf", &base); //scans for user input for the base of the exponent
 	printf("What do you want your exponent to be?\n");
-	scanf_s("%lf", &exp); //scnas for user input for the exponent
+	scanf("%lf", &exp); //scnas for user input for the exponent
 
 	val_num = pow(base, exp); //evaluates the function intended
 	return val_num; //returns the value
@@ -203,7 +203,7 @@ double Exp() {
 double Sine() {
 	double scan_num, val_num; //Initialize the variables used in the Sine function
 	printf("What number do you want to be evaluated?\n");
-	scanf_s("%lf", &scan_num); //scans for user input
+	scanf("%lf", &scan_num); //scans for user input
 
 	val_num = sin(scan_num); //taks the sin of the value (in radians) the user input
 	return val_num; //returns the final value
@@ -212,7 +212,7 @@ double Sine() {
 double Cosine() {
 	double scan_num, val_num; //Initialize the variables used in the Cosine function
 	printf("What number do you want to be evaluated?\n");
-	scanf_s("%lf", &scan_num); //scans for user input
+	scanf("%lf", &scan_num); //scans for user input
 
 	val_num = cos(scan_num); //taks the cosine of the value (in radians) the user input
 	return val_num; //returns the final value
@@ -221,7 +221,7 @@ double Cosine() {
 double Tangent() {
 	double scan_num, val_num; //Initialize the variables used in the Tangent function
 	printf("What number do you want to be evaluated?\n");
-	scanf_s("%lf", &scan_num); //scans for user input
+	scanf("%lf", &scan_num); //scans for user input
 
 	val_num = tan(scan_num); //taks the tangent of the value (in radians) the user input
 	return val_num; //returns the final value

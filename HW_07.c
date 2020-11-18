@@ -20,7 +20,7 @@ void HW07() {
 			"3: Multiply 3 numbers.\n"
 			"4: Divide 2 numbers.\n"); //prints the menu for the user
 
-		scanf_s("%d", &choice); //takes the user input and sett it as the choice variable
+		scanf("%d", &choice); //takes the user input and sett it as the choice variable
 		switch (choice) { //initializes the switch statement for more efficiency
 		case 1:
 			return_val = add(); //calls the add fucntion and makes the return value assigned to return_val
@@ -49,9 +49,9 @@ void HW07() {
 float add() { //creates the function add and says that it will return a float
 	float num1, num2;
 	printf("What is the first number: ");
-	scanf_s("%f", &num1);
+	scanf("%f", &num1);
 	printf("What is the second number:");
-	scanf_s("%f", &num2);
+	scanf("%f", &num2);
 	return num1 + num2;
 }
 
@@ -64,9 +64,9 @@ input the first number in and then the second, it will return the sum of those t
 float subtract() {
 	float num1, num2;
 	printf("What is the first number: ");
-	scanf_s("%f", &num1);
+	scanf("%f", &num1);
 	printf("What is the second number:");
-	scanf_s("%f", &num2);
+	scanf("%f", &num2);
 	return num2 - num1;
 }
 
@@ -79,11 +79,11 @@ input the first number in and then the second, it will return the diffence of th
 float multiply() {
 	float num1, num2, num3;
 	printf("What is the first number: ");
-	scanf_s("%f", &num1);
+	scanf("%f", &num1);
 	printf("What is the second number:");
-	scanf_s("%f", &num2);
+	scanf("%f", &num2);
 	printf("What is the third number:");
-	scanf_s("%f", &num3);
+	scanf("%f", &num3);
 	return num1 * num2 * num3;
 }
 
@@ -97,9 +97,9 @@ as one float.
 float divide() {
 	float num1, num2;
 	printf("What is the first number: ");
-	scanf_s("%f", &num1);
+	scanf("%f", &num1);
 	printf("What is the second number:");
-	scanf_s("%f", &num2);
+	scanf("%f", &num2);
 	return num1 / num2;
 }
 

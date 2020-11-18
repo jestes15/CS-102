@@ -8,11 +8,11 @@ int HW0203() {
 	float getMiles;
 	int getChoice;
 	printf("Which conversion are you doing?\n1 : Mile to Meter\n2 : Meter to Mile\n ::");
-	scanf_s("%d", &getChoice);
+	scanf("%d", &getChoice);
 
 	if (getChoice == 1) {
 		printf("Enter number of miles to be converted to kilometers :");
-		scanf_s("%f", &getNumber);
+		scanf("%f", &getNumber);
 		printf("\n");
 
 		getMetric = 1.62 * getNumber;
@@ -25,7 +25,7 @@ int HW0203() {
 	}
 	else {
 		printf("Enter number of kilometers to be converted to miles :");
-		scanf_s("%f", &getNumber);
+		scanf("%f", &getNumber);
 		printf("\n");
 
 		getMiles = getNumber / 1.62;
