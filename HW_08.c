@@ -52,7 +52,7 @@ int Menu() {
 		"7: Cos(x)\n"
 		"8: Tan(x)\n");
 	//prints the menu which will allow the user to see his options
-	scanf_s("%d", &choice);
+	scanf("%d", &choice);
 	if (choice == 0) {
 		return 0;
 		//sends the exit code to the main function allowing it to end the program
@@ -139,7 +139,7 @@ double Subtract() {
 	double val_num, scan_num;
 	printf("Input as many numbers as you want, or 0 to get your total.\n");
 
-	scanf_s("%lf", &val_num);
+	scanf("%lf", &val_num);
 	//The first input is the number the user wants to subtract everything else from.
 	while (loop_cont) {
 		scanf("%lf", &scan_num);
@@ -157,7 +157,7 @@ double Multiply() {
 	double val_num, scan_num;
 	printf("Input as many numbers as you want, or 0 to get your total.\n");
 
-	scanf_s("%lf", &val_num);
+	scanf("%lf", &val_num);
 	//The first input is the number the user wants to multiply everything by
 	while (loop_cont) {
 		scanf("%lf", &scan_num);
@@ -175,7 +175,7 @@ double Divide() {
 	double val_num, scan_num;
 	printf("Input as many numbers as you want, or 0 to get your total.\n");
 	//The first input is the number the user wants to initiate the division
-	scanf_s("%lf", &val_num);
+	scanf("%lf", &val_num);
 
 	while (loop_cont) {
 		scanf("%lf", &scan_num);
